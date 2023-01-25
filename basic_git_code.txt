@@ -1,0 +1,91 @@
+
+Ananda M R@Anand-Shankar MINGW64 ~
+$ pwd
+/c/Users/Ananda M R
+
+Ananda M R@Anand-Shankar MINGW64 ~
+$ cd /c/git/GitSample2
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ pwd
+/c/git/GitSample2
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git init
+Reinitialized existing Git repository in C:/git/GitSample2/.git/
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ReactNiranjanNotes.txt
+        Shishira_Bhat_Java_Notes.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git add ReactNiranjanNotes.txt
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git add Shishira_Bhat_Java_Notes.pdf
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ReactNiranjanNotes.txt
+        new file:   Shishira_Bhat_Java_Notes.pdf
+
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git commit -m "java react doc"
+[master (root-commit) cee0a68] java react doc
+ 2 files changed, 171 insertions(+)
+ create mode 100644 ReactNiranjanNotes.txt
+ create mode 100644 Shishira_Bhat_Java_Notes.pdf
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git remote add origin https://github.com/ANANDSHANKARR/Public-Repository.git
+
+/**** this will not work for 2nd time file upload procedure ******/
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git push -u origin master
+To https://github.com/ANANDSHANKARR/Public-Repository.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ANANDSHANKARR/Public-Repository.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+/**** this will work for 2nd time file upload procedure ******/
+ 
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git push origin master --force
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.14 MiB | 750.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ANANDSHANKARR/Public-Repository.git
+ + bc165e5...cee0a68 master -> master (forced update)
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ananda M R@Anand-Shankar MINGW64 /c/git/GitSample2 (master)
+$
+
