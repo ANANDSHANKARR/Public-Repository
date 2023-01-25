@@ -1,0 +1,171 @@
+REACT jS SYLLABUS
+
+FUNDAMENTALS 
+
+creation of app    - npx create-react-app appNAme
+running of app     - npm start 
+structure of app   - index.html  <-- index.js  <-- app.js
+
+JSX , babbel 
+Components and types 
+Formatting in react
+Fragments in react 
+Dynamic value
+event handling
+adding styles
+useState
+Conditional rendering (and , ternary operator)
+Multiple components 
+props
+displaying multiple data 
+Filtering the data 
+
+
+HOOKS 
+useState
+useEffect
+useRef
+useMemo
+useContext
+useReducer
+usePramas
+useHistory
+
+
+ADVANCE 
+
+JSON server 
+Fetching teh data using api end points 
+conditional loading
+error handling 
+custom hook creation
+React Routing 
+Route parameters 
+handling 404 page 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+
+Class on 19/12/22
+
+JSX
+
+   JSX  = JS          + XML  
+          javascript  + extensible markup language
+
+    JSX can be used to write HTML inside the react apps
+    JSX allows us to create custom tags in react
+
+    This JSX is a special js value , so to convert this special value to normal values
+    we use Babel transpiler.
+
+
+Components
+
+ components is a normal bloack with bit of code and which return JSX
+ value , and it is used to achieve HTML template reusability.
+
+ types :
+ 1) functional component
+ 2) class component
+
+ Rules
+ 1) while creating a component document name and function name should be always same.
+ 2) while creating a component document name and function name should always starts with capitial letter.
+ 3) Default Exporting of the function or class is mandatory.
+ 4) To call the component we use tag like syntax -->  <Component/>  or    <Component></Component>
+
+
+Formatting
+
+    React is combination of JS and HTML , so to specify the exact code we use Formators
+
+    1)  JS    ( HTML )   JS          -->  return(  <tag> data </tag   )
+    2)  HTML  { JS   }   HTML        -->  <tag>  { varibale name }  </tag>
+
+       
+    function App()
+    {
+        let str = "hello world";
+        return(  <h1>  {str}   </h1> );
+    }
+
+Fragments
+    we cannot return multiple values from a function , so we enclose within an array literal.
+    In react components if we want to return multiple jsx template , we enclose within a fragment.
+    --> fragments can be any symmentic tag.
+        <div> or <nav> or <section>
+
+    --> fragments can be jsx fragment
+        <> multiple tags </>
+
+
+    function App()
+    {
+        let str = "hello world";
+        return(  
+            <>
+                <h1>  {str}   </h1>
+                <h1>  {str}   </h1>
+            </>
+        );
+    }
+
+-------------------------------------------------End Of Class--------------------------------------
+
+
+Class on 20/12/22
+
+Dynamic values
+
+    In react we can use dynamic values by using flower brackets 
+    we can acess number and string values directly
+    we can access array and object by using index and key name.
+
+    syntax  :   <tag>  {dynamic value} </tag>
+
+Event Handling 
+
+    Inside the components we can create some functionalities , those 
+    functions can be a zero parameterised and some time parameterised also.
+
+    if the function is zero parameterised
+
+        <tag onclick={ function name } >   <tag/>
+
+    if the function is  parameterised
+
+        <tag onclick={ ()=>{ fn_name( aurg ) } } >   <tag/>
+
+
+Adding styles 
+
+     Adding styles in react is same when it is a external or internal css
+     but inline css should be added as object properties 
+
+
+     let obj = { 
+                 propertyName : "value" ,
+                 propertyName : "value"
+                }
+
+
+    <tag style={ obj } />
+
+HOOK
+
+    HOOK is an object in react with some builtin methods.
+    each and every inbuilt methods is called as a seperate hooks 
+
+
+useState hook : used in react for state managment.
+
+        import {useState} from 'react';
+
+        let [value , setValue] = useState(initial value) 
+
+-------------------------------------------------End Of Class--------------------------------------
+
+
